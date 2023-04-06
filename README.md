@@ -1,5 +1,39 @@
+
 > ### Obiex Assessment
 This is my attempt at the 'UpdateTransactions' microservice for the Backend Developer role application at Obiex. It was built with Nestjs, Express, Docker, and PostgreSQL.
+For this project I assumed the following;
+- The logger, message queue, and event bus wouldn't be implemented for this phase
+- A module within the application called `crypto-api` mocks the 3rd party Crypto API to return the transaction updates
+- A Post Request was created to 'UpdateTransactions' in place of a message
+- Demo Clients were created with demo wallet details. These clients can be used to test the application. 
+- Any other clientID, invalid wallet currency or invallid wallet address will result in unsuccessful requests 
+```bash
+Demo Clients Info
+[
+    {
+        clientId: 'c1',
+        wallets: [
+            {
+                currency: 'BTC',
+                address: 'myueAFjQTdnmxkoM4QbuAym28BhTGQ3usq'
+            },
+            {
+                currency: 'BNB',
+                address: 'n4o5ciu8ceQ6i9hgFgTSeeXzP5ZdifttNN'
+            }
+        ]
+    },
+    {
+        clientId: 'c2',
+        wallets: [
+            {
+                currency: 'BTC',
+                address: 'mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K'
+            }
+        ]
+    }
+]
+```
 
 # Getting started
 
