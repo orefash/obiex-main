@@ -1,6 +1,7 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, Unique } from "typeorm";
 
 @Entity()
+@Unique(['txnId'])
 export class Transaction {
 
     @PrimaryGeneratedColumn({
@@ -10,7 +11,6 @@ export class Transaction {
 
     @Column({
         nullable: false,
-        name: 'txn_id'
     })
     txnId: string;
 
@@ -27,7 +27,10 @@ export class Transaction {
 
     @Column({
         nullable: false,
-        name: 'currency_type'
+        name: 'amount',
+        type: 'decimal', 
+        precision: 10, 
+        scale: 2
     })
     amount: number;
 

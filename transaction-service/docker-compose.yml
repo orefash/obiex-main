@@ -1,0 +1,51 @@
+version: '3'
+services: 
+  db:
+    image: postgres
+    restart: always
+    environment: 
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    container_name: postgres-db
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+  transaction-service:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    image: kingfash5/transaction-service:latest
+    environment: 
+      - DB_TYPE=${DB_TYPE}
+      - POSTGRES_HOST=${POSTGRES_HOST}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASS=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_SYNC=${POSTGRES_SYNC}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - APP_PORT=${APP_PORT}
+    ports: 
+      - "4500:4500" # expose-to-the-world : only-in-the-docker
+    container_name: nest-transaction-service
+    depends_on: 
+      - db
+    volumes: 
+      - .:/app
+      - /app/node_modules
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    container_name: nest-pgadmin4
+    environment: 
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+      - PGADMIN_LISTEN_PORT=${PGADMIN_LISTEN_PORT}
+    ports: 
+      - "8080:80"
+    volumes: 
+      - ./pgadmin-data:/var/lib/pgadmin
+    depends_on: 
+      - db
+volumes:
+  pgdata:
+  pgadmin-data:
