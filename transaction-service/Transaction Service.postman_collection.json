@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "e0b41498-7e05-41b9-8b52-d1dd1355608f",
+		"name": "Transaction Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20674887"
+	},
+	"item": [
+		{
+			"name": "Get All Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{tservice_url}}/api/transactions",
+					"host": [
+						"{{tservice_url}}"
+					],
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tservice_url}}/api/transactions",
+							"host": [
+								"{{tservice_url}}"
+							],
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3167"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5f-fSvpEzijHHQqrJSey3Ol5p2G0p4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 16:49:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"txnId\": \"b21f96339df57fed2c42\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"9fb70a2a6412a84858d8\",\n        \"timestamp\": \"2023-04-06T15:13:04.565Z\",\n        \"fetchDate\": \"2023-04-06T15:13:04.615Z\"\n    },\n    {\n        \"id\": \"2\",\n        \"txnId\": \"58b8874994934b5407c2\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"344ab649e877b8be1f8a\",\n        \"timestamp\": \"2023-04-06T15:13:04.581Z\",\n        \"fetchDate\": \"2023-04-06T15:13:04.615Z\"\n    },\n    {\n        \"id\": \"3\",\n        \"txnId\": \"ff546d17b3529f299ac4\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"57a63a7ae1975fa74254\",\n        \"timestamp\": \"2023-04-06T15:13:04.583Z\",\n        \"fetchDate\": \"2023-04-06T15:13:04.615Z\"\n    },\n    {\n        \"id\": \"4\",\n        \"txnId\": \"4b395eca52d290bd03b9\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"9f7981891d400123fb02\",\n        \"timestamp\": \"2023-04-06T15:13:19.943Z\",\n        \"fetchDate\": \"2023-04-06T15:13:19.966Z\"\n    },\n    {\n        \"id\": \"5\",\n        \"txnId\": \"4d4069ae82e02461208e\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"05337a5038797e24a105\",\n        \"timestamp\": \"2023-04-06T15:13:19.946Z\",\n        \"fetchDate\": \"2023-04-06T15:13:19.966Z\"\n    },\n    {\n        \"id\": \"6\",\n        \"txnId\": \"1b0d29fab54053e16d9b\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"026c3e4add910904fe90\",\n        \"timestamp\": \"2023-04-06T15:13:19.946Z\",\n        \"fetchDate\": \"2023-04-06T15:13:19.966Z\"\n    },\n    {\n        \"id\": \"7\",\n        \"txnId\": \"2acda96943b0ccc0fe28\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"2858233fa0ed3aac1ef2\",\n        \"timestamp\": \"2023-04-06T15:13:34.976Z\",\n        \"fetchDate\": \"2023-04-06T15:13:35.317Z\"\n    },\n    {\n        \"id\": \"8\",\n        \"txnId\": \"596e919260c7c55f0add\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"527ad2d7f8410f8de881\",\n        \"timestamp\": \"2023-04-06T15:13:34.978Z\",\n        \"fetchDate\": \"2023-04-06T15:13:35.317Z\"\n    },\n    {\n        \"id\": \"9\",\n        \"txnId\": \"591c73eae9f0121ab9d2\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"571c8e5dd1c7097b70ab\",\n        \"timestamp\": \"2023-04-06T15:13:34.978Z\",\n        \"fetchDate\": \"2023-04-06T15:13:35.317Z\"\n    },\n    {\n        \"id\": \"11\",\n        \"txnId\": \"abc2f0292baf16118cf5\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"977982101668529951e3\",\n        \"timestamp\": \"2023-04-06T15:13:39.915Z\",\n        \"fetchDate\": \"2023-04-06T15:13:39.942Z\"\n    },\n    {\n        \"id\": \"12\",\n        \"txnId\": \"3c63bc23da4ec319d184\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"267a8f40c4499d52217b\",\n        \"timestamp\": \"2023-04-06T15:13:39.915Z\",\n        \"fetchDate\": \"2023-04-06T15:13:39.942Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get All Client Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{tservice_url}}/api/transactions/client/c2/currency/BTC",
+					"host": [
+						"{{tservice_url}}"
+					],
+					"path": [
+						"api",
+						"transactions",
+						"client",
+						"c2",
+						"currency",
+						"BTC"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Client Transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tservice_url}}/api/transactions/client/c2/currency/BTC",
+							"host": [
+								"{{tservice_url}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"client",
+								"c2",
+								"currency",
+								"BTC"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3167"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5f-fSvpEzijHHQqrJSey3Ol5p2G0p4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 16:38:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"txnId\": \"b21f96339df57fed2c42\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"9fb70a2a6412a84858d8\",\n        \"timestamp\": \"2023-04-06T15:13:04.565Z\",\n        \"fetchDate\": \"2023-04-06T15:13:04.615Z\"\n    },\n    {\n        \"id\": \"2\",\n        \"txnId\": \"58b8874994934b5407c2\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"344ab649e877b8be1f8a\",\n        \"timestamp\": \"2023-04-06T15:13:04.581Z\",\n        \"fetchDate\": \"2023-04-06T15:13:04.615Z\"\n    },\n    {\n        \"id\": \"3\",\n        \"txnId\": \"ff546d17b3529f299ac4\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"57a63a7ae1975fa74254\",\n        \"timestamp\": \"2023-04-06T15:13:04.583Z\",\n        \"fetchDate\": \"2023-04-06T15:13:04.615Z\"\n    },\n    {\n        \"id\": \"4\",\n        \"txnId\": \"4b395eca52d290bd03b9\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"9f7981891d400123fb02\",\n        \"timestamp\": \"2023-04-06T15:13:19.943Z\",\n        \"fetchDate\": \"2023-04-06T15:13:19.966Z\"\n    },\n    {\n        \"id\": \"5\",\n        \"txnId\": \"4d4069ae82e02461208e\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"05337a5038797e24a105\",\n        \"timestamp\": \"2023-04-06T15:13:19.946Z\",\n        \"fetchDate\": \"2023-04-06T15:13:19.966Z\"\n    },\n    {\n        \"id\": \"6\",\n        \"txnId\": \"1b0d29fab54053e16d9b\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"026c3e4add910904fe90\",\n        \"timestamp\": \"2023-04-06T15:13:19.946Z\",\n        \"fetchDate\": \"2023-04-06T15:13:19.966Z\"\n    },\n    {\n        \"id\": \"7\",\n        \"txnId\": \"2acda96943b0ccc0fe28\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"2858233fa0ed3aac1ef2\",\n        \"timestamp\": \"2023-04-06T15:13:34.976Z\",\n        \"fetchDate\": \"2023-04-06T15:13:35.317Z\"\n    },\n    {\n        \"id\": \"8\",\n        \"txnId\": \"596e919260c7c55f0add\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"527ad2d7f8410f8de881\",\n        \"timestamp\": \"2023-04-06T15:13:34.978Z\",\n        \"fetchDate\": \"2023-04-06T15:13:35.317Z\"\n    },\n    {\n        \"id\": \"9\",\n        \"txnId\": \"591c73eae9f0121ab9d2\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"571c8e5dd1c7097b70ab\",\n        \"timestamp\": \"2023-04-06T15:13:34.978Z\",\n        \"fetchDate\": \"2023-04-06T15:13:35.317Z\"\n    },\n    {\n        \"id\": \"11\",\n        \"txnId\": \"abc2f0292baf16118cf5\",\n        \"type\": \"WITHDRAW\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.03\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"977982101668529951e3\",\n        \"timestamp\": \"2023-04-06T15:13:39.915Z\",\n        \"fetchDate\": \"2023-04-06T15:13:39.942Z\"\n    },\n    {\n        \"id\": \"12\",\n        \"txnId\": \"3c63bc23da4ec319d184\",\n        \"type\": \"DEPOSIT\",\n        \"currencyType\": \"BTC\",\n        \"amount\": \"0.01\",\n        \"clientId\": \"c2\",\n        \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n        \"transactionAddress\": \"267a8f40c4499d52217b\",\n        \"timestamp\": \"2023-04-06T15:13:39.915Z\",\n        \"fetchDate\": \"2023-04-06T15:13:39.942Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clientId\": \"c2\",\n    \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n    \"currencyType\": \"BTC\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{tservice_url}}/api/transactions/update",
+					"host": [
+						"{{tservice_url}}"
+					],
+					"path": [
+						"api",
+						"transactions",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Transactions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clientId\": \"c2\",\n    \"walletAddress\": \"mnNiUykkHH7nwQrGgQiSdVt6fpXNpf2L1K\",\n    \"currencyType\": \"BTC\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{tservice_url}}/api/transactions/update",
+							"host": [
+								"{{tservice_url}}"
+							],
+							"path": [
+								"api",
+								"transactions",
+								"update"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-VtFQirtKpWGqpzIaN4MRbZjrvIc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 15:13:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Transactions Updated\"\n}"
+				}
+			]
+		}
+	]
+}
